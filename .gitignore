@@ -1,0 +1,14 @@
+﻿# Ignore system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Local editor settings
+.vscode/
+*.code-workspace
+
+# Node/npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
