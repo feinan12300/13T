@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13TANG LIVESHOW 滚动动画酒水单</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 滚动进度条 -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="scroll-progress-text" id="scrollProgressText">0%</div>
+    
+    <!-- 粒子背景 -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- 固定头部 -->
+    <header class="fixed-header">
+        <div class="header-content">
+            <div>
+                <div class="brand-name">13TANG LIVESHOW</div>
+                <div class="brand-slogan">好音乐/趣现场 GoodMusic / FunLive</div>
+            </div>
+            <div style="color: #FFD700; font-size: 0.9em;">
+                A LIVE SCENE WITH MUSIC, US, LOVE AND RESONANCE
+            </div>
+        </div>
+    </header>
+    
+    <!-- 分类导航 -->
+    <nav class="category-nav" aria-label="分类导航">
+        <div class="nav-items">
+            <a class="nav-item active" data-section="packages" href="#packages">🔥 套餐</a>
+            <a class="nav-item" data-section="brandy" href="#brandy">🥃 白兰地</a>
+            <a class="nav-item" data-section="whisky" href="#whisky">🥃 威士忌</a>
+            <a class="nav-item" data-section="champagne" href="#champagne">🍾 香槟</a>
+            <a class="nav-item" data-section="beer" href="#beer">🍺 啤酒</a>
+            <a class="nav-item" data-section="cocktail" href="#cocktail">🍹 鸡尾酒</a>
+            <a class="nav-item" data-section="snacks" href="#snacks">🍗 小吃</a>
+            <a class="nav-item" data-section="fruits" href="#fruits">🍎 果盘</a>
+        </div>
+    </nav>
+    <main>
+    
+    <!-- 套餐区 -->
+    <div class="page-section" id="packages">
+        <div class="parallax-layer">
+            <div class="parallax-shape" style="width: 300px; height: 300px; background: #FFD700; top: 20%; right: 10%;"></div>
+            <div class="parallax-shape" style="width: 200px; height: 200px; background: #FF6347; bottom: 30%; left: 5%;"></div>
+        </div>
+        <h2 class="section-title">🔥 热门套餐</h2>
+        <div class="card-container">
+            <div class="product-card package-card animate-left">
+                <div class="card-tag">店长推荐</div>
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="卡座套餐" class="card-image">
+                <div class="card-content">
+                    <div class="package-header">
+                        <div class="package-name">卡座开台套餐</div>
+                        <div class="package-price">¥168</div>
+                    </div>
+                    <div class="package-items">
+                        <p>🎁 <span>干果×2</span> + 礼炮×2</p>
+                        <p>🍵 <span>六宝参茶×1</span> + 纸巾×1</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card package-card animate-right">
+                <div class="card-tag">热门</div>
+                <img src="https://s.coze.cn/image/5bdq3ipJN8w/" alt="伏特加套餐" class="card-image">
+                <div class="card-content">
+                    <div class="package-header">
+                        <div class="package-name">轻奢伏特加套餐</div>
+                        <div class="package-price">¥688</div>
+                    </div>
+                    <div class="package-items">
+                        <p>🍸 <span>绝对×橙皮伏特加×1</span></p>
+                        <p>🍾 <span>布鲁大师气泡酒×12</span></p>
+                        <p>🍎 <span>中果盘×1</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card package-card animate-up">
+                <div class="card-tag">人气</div>
+                <img src="https://s.coze.cn/image/OAUV9yIkoU0/" alt="派对套餐" class="card-image">
+                <div class="card-content">
+                    <div class="package-header">
+                        <div class="package-name">派对狂欢套餐</div>
+                        <div class="package-price">¥988</div>
+                    </div>
+                    <div class="package-items">
+                        <p>🍺 <span>科罗娜/蓝妹×36</span></p>
+                        <p>🍗 <span>小吃×2</span> + 纸巾×1</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card package-card animate-scale">
+                <div class="card-tag">尊享</div>
+                <img src="https://s.coze.cn/image/34v5LI6iQTM/" alt="香槟套餐" class="card-image">
+                <div class="card-content">
+                    <div class="package-header">
+                        <div class="package-name">豪华香槟套餐</div>
+                        <div class="package-price">¥3888</div>
+                    </div>
+                    <div class="package-items">
+                        <p>🍾 <span>香槟×6</span></p>
+                        <p>🎊 <span>精美小吃 + 果盘</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card package-card animate-rotate">
+                <div class="card-tag">VIP</div>
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="王者套餐" class="card-image">
+                <div class="card-content">
+                    <div class="package-header">
+                        <div class="package-name">王者至尊套餐</div>
+                        <div class="package-price">¥18888</div>
+                    </div>
+                    <div class="package-items">
+                        <p>👑 <span>豪华香槟组合</span></p>
+                        <p>✨ <span>全套服务 + VIP待遇</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 白兰地区 -->
+    <div class="page-section" id="brandy">
+        <h2 class="section-title">🥃 白兰地系列</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <div class="card-tag">经典</div>
+                <img src="https://s.coze.cn/image/34v5LI6iQTM/" alt="轩尼诗VSOP" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">轩尼诗VSOP</div>
+                    <div class="card-specs">700ML | 配送软饮*4 纸巾*1</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <div class="card-tag">高端</div>
+                <img src="https://s.coze.cn/image/itgjjsUVS5w/" alt="马爹利蓝带" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">马爹利蓝带</div>
+                    <div class="card-specs">700ML | 配送软饮*4 纸巾*1</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <div class="card-tag">奢华</div>
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="路易十三" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">路易十三</div>
+                    <div class="card-specs">700ML | 配送软饮*4 纸巾*1</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <div class="card-tag">经典</div>
+                <img src="https://s.coze.cn/image/5bdq3ipJN8w/" alt="人头马XO" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">人头马XO</div>
+                    <div class="card-specs">700ML | 配送软饮*4 纸巾*1</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 威士忌区 -->
+    <div class="page-section" id="whisky">
+        <h2 class="section-title">🥃 威士忌系列</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <img src="https://s.coze.cn/image/5bdq3ipJN8w/" alt="芝华士12年" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">芝华士12年</div>
+                    <div class="card-specs">700ML | 苏格兰调和威士忌</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <img src="https://s.coze.cn/image/itgjjsUVS5w/" alt="马爹利蓝带" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">马爹利蓝带</div>
+                    <div class="card-specs">700ML | 单一麦芽威士忌</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <img src="https://s.coze.cn/image/34v5LI6iQTM/" alt="麦卡伦12年" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">麦卡伦12年</div>
+                    <div class="card-specs">700ML | 单一麦芽威士忌</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <img src="https://s.coze.cn/image/pkfOWDVKNxc/" alt="杰克丹尼" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">杰克丹尼</div>
+                    <div class="card-specs">700ML | 美国田纳西威士忌</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 香槟区 -->
+    <div class="page-section" id="champagne">
+        <h2 class="section-title">🍾 香槟系列</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <img src="https://s.coze.cn/image/5bdq3ipJN8w/" alt="酩悦香槟" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">酩悦香槟</div>
+                    <div class="card-specs">750ML | 法国香槟区</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <div class="card-tag">顶级</div>
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="黑桃A香槟" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">黑桃A香槟</div>
+                    <div class="card-specs">750ML | 顶级奢华</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <img src="https://s.coze.cn/image/itgjjsUVS5w/" alt="马爹利蓝带" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">马爹利蓝带</div>
+                    <div class="card-specs">750ML | 精品香槟</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <img src="https://s.coze.cn/image/34v5LI6iQTM/" alt="轩尼诗VSOP" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">轩尼诗VSOP</div>
+                    <div class="card-specs">750ML | 经典之选</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 啤酒区 -->
+    <div class="page-section" id="beer">
+        <h2 class="section-title">🍺 啤酒系列</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <img src="https://s.coze.cn/image/OAUV9yIkoU0/" alt="科罗娜" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">科罗娜</div>
+                    <div class="card-specs">330ML | 墨西哥啤酒</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <img src="https://s.coze.cn/image/5bdq3ipJN8w/" alt="蓝妹啤酒" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">蓝妹啤酒</div>
+                    <div class="card-specs">330ML | 香港品牌</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <img src="https://s.coze.cn/image/34v5LI6iQTM/" alt="百威啤酒" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">百威啤酒</div>
+                    <div class="card-specs">330ML | 美国品牌</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="1664白啤" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">1664白啤</div>
+                    <div class="card-specs">330ML | 法国小麦啤</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 鸡尾酒区 -->
+    <div class="page-section" id="cocktail">
+        <h2 class="section-title">🍹 鸡尾酒系列</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <div class="card-tag">经典</div>
+                <img src="https://s.coze.cn/image/pkfOWDVKNxc/" alt="长岛冰茶" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">长岛冰茶</div>
+                    <div class="card-specs">经典鸡尾酒</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <img src="https://s.coze.cn/image/5bdq3ipJN8w/" alt="莫吉托" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">莫吉托</div>
+                    <div class="card-specs">清爽薄荷味</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <img src="https://s.coze.cn/image/34v5LI6iQTM/" alt="玛格丽特" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">玛格丽特</div>
+                    <div class="card-specs">龙舌兰经典</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="蓝色夏威夷" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">蓝色夏威夷</div>
+                    <div class="card-specs">热带风情</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 小吃区 -->
+    <div class="page-section" id="snacks">
+        <h2 class="section-title">🍗 精美小吃</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <img src="https://s.coze.cn/image/8-nANfqP2CQ/" alt="坚果拼盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">坚果拼盘</div>
+                    <div class="card-specs">混合坚果装</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <img src="https://s.coze.cn/image/pKFzrTnRTOg/" alt="炸鸡翅" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">炸鸡翅</div>
+                    <div class="card-specs">香酥可口</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <img src="https://s.coze.cn/image/pkfOWDVKNxc/" alt="薯条拼盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">薯条拼盘</div>
+                    <div class="card-specs">美式经典</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <img src="https://s.coze.cn/image/OAUV9yIkoU0/" alt="烤串拼盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">烤串拼盘</div>
+                    <div class="card-specs">多种口味</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 果盘区 -->
+    <div class="page-section" id="fruits">
+        <h2 class="section-title">🍎 果盘系列</h2>
+        <div class="card-container">
+            <div class="product-card animate-left">
+                <img src="https://s.coze.cn/image/pFKzrTnRTOg/" alt="小果盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">小果盘</div>
+                    <div class="card-specs">时令水果装</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-right">
+                <img src="https://s.coze.cn/image/8-nANfqP2CQ/" alt="中果盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">中果盘</div>
+                    <div class="card-specs">2-3人分享</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-up">
+                <img src="https://s.coze.cn/image/pKFzrTnRTOg/" alt="大果盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">大果盘</div>
+                    <div class="card-specs">4-6人分享</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+            
+            <div class="product-card animate-scale">
+                <img src="https://s.coze.cn/image/CEUJtBvsMy0/" alt="豪华果盘" class="card-image">
+                <div class="card-content">
+                    <div class="card-title">豪华果盘</div>
+                    <div class="card-specs">进口水果装</div>
+                    <div class="card-price">现价咨询</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- 滚动到顶部按钮 -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
+    
+    <!-- 加载动画指示器 -->
+    <div class="loading-indicator" id="loadingIndicator">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+    </div>
+    
+    <!-- 底部固定信息 -->
+    <footer class="fixed-footer" id="fixedFooter">
+        <div class="footer-content">
+            <div class="store-info">
+                <div class="info-item">📍 13TANG LIVESHOW 花城汇店</div>
+                <div class="info-item">⏰ 21:00 - 次日05:00</div>
+                <div class="info-item">🎵 好音乐/趣现场</div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
